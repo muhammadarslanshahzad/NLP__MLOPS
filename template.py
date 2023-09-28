@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
     Project Name and List of File for generating the Project Tempalte
 """
 
-project_name = "TextSummerizer"
+project_name = "textSummerizer"
 
 list_of_files = [
     '.github/workflows/.gitkeep',
@@ -53,6 +53,6 @@ for filepath in list_of_files:
         with open(filepath, 'w') as f:
             pass
             logging.info(f"Creating empty file: {filepath}")
-            
+
     else:
         logging.info(f"{filepath} already exists")
